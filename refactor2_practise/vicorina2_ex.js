@@ -8,7 +8,11 @@ if(!Number.isNaN(first_question))
     if(first_question === 4){
         count++;
     }
-} else{
+    else{
+    alert("Неправильный ответ! Правильный ответ: 4.");
+    }
+} 
+else{
     alert("Неправильный ввод! Пожалуйста, введите число.");
 }
 
@@ -21,16 +25,19 @@ if(!Number.isNaN(second_question))
     if(second_question === 30){
         count++;
     }
+    else{
+    alert("Неправильный ответ! Правильный ответ: 30.");
+    }
 } else{
     alert("Неправильный ввод! Пожалуйста, введите число.");
 }
 
 
 //третий вопрос
-let thirdQuestion = String(prompt("Что означает слово 'cat' [кошка, собака]"));
-let niceThirQuestion = thirdQuestion.toLowerCase().trim();
+let thirdQuestion = prompt("Что означает слово 'cat' [кошка, собака]");
+let niceThirdQuestion = thirdQuestion.toLowerCase().trim();
 
-if(niceThirQuestion === "кошка"){
+if(thirdQuestion != null && niceThirdQuestion === "кошка"){
     count++;
 }else{
     alert("Неправильный ответ! Правильный ответ: кошка.");
