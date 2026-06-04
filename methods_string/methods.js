@@ -4,8 +4,6 @@ let multiLineString = `Это многострочная строка.
 console.log(multiLineString);
 
 
-
-
 //Доступ к символам
 let string = "Hello";
 console.log(string[0]);

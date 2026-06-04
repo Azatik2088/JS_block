@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсчет денег</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Калькулятор чаевых</h1>
+   <!--Ввод данных от пользователя-->
+   <div>
+        <div>
+        <label>Сумма счета: </label>
+        <input id="countOfAmount" type="number">
+    </div><br>
+
+    <div>
+        <label>Процент чаевых: </label>
+        <input id="percentTip" type="number">
+    </div><br>
+
+    <div>
+        <label>Количество человек: </label>
+        <input id="countOfPeople" type="number">
+    </div><br>
+
+    <button id="calcBtn">Рассчитать</button>
+   </div>
+
+    <h1>Результаты:</h1>
+    <!--Вывод данных для пользователя-->
+   <div>
+        <label id="Tip">Чаевые: </label>
+    </div><br>
+
+    <div>
+        <label id="AllSum">Общая сумма: </label>
+    </div><br>
+
+    <div>
+        <label id="sumForPerson">Сумма на человека: </label>
+    </div><br>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
