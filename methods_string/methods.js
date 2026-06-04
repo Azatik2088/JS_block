@@ -1,3 +1,11 @@
+//Многосторочные строки 
+let multiLineString = `Это многострочная строка.
+Она может занимать несколько строк.`;
+console.log(multiLineString);
+
+
+
+
 //Доступ к символам
 let string = "Hello";
 console.log(string[0]);
@@ -10,6 +18,7 @@ console.log(string.length);
 let string1 = "Hello, ";
 let string2 = "World";
 let result = string1 + string2;
+console.log(string1.concat(string2));
 console.log(result);
 
 //Верхний и нижний регистр
